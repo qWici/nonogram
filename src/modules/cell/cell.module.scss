@@ -1,0 +1,26 @@
+.cell {
+  background-color: #fff;
+  border: 1px solid #B7B8BE;
+  //border-right: 1px solid #B7B8BE;
+  //border-bottom: 1px solid #B7B8BE;
+  //&:nth-child(5n) {
+  //  border-right: none;
+  //}
+  //
+  &.filled {
+    background-color: #344A60;
+    border-color: #050101;
+  }
+  &.crossed {
+    position: relative;
+    //border-color: #050101;
+    &:after {
+      content: "X";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+    }
+  }
+}
